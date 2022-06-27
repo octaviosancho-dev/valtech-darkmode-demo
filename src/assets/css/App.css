@@ -1,0 +1,95 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+*::selection {
+  background-color: #00c8ff;
+}
+.navBar {
+  color: rgb(255, 255, 255);
+  background-color: rgb(32, 32, 32);
+  width: 100vw;
+  height: 120px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.navBar-items {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 90vw;
+}
+.navBar-items a::after {
+  content: '';
+  width: 10px;
+  height: 4px;
+  border: none;
+  border-radius: 1px;
+  position: absolute;
+  top: 66px;
+  margin-left: 5px;
+  background-color: white;
+}
+.navBar-items p {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.navBar-items p:nth-last-child(1)::before {
+  content: '';
+  width: 13px;
+  height: 4px;
+  background-color: #00c8ff;
+  position: absolute;
+  top: 33px;
+}
+.aside {
+  height: 100vh;
+  width: 65px;
+  background-color: rgb(32, 32, 32);
+  border: 1px solid #00c8ffa2;
+  border-top: none;
+  border-bottom: none;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  gap: 370px;
+  position: sticky;
+  top: -1px;
+}
+.aside > div {
+  margin: 0px auto;
+  padding: 20px;
+  width: 100%;
+  font-size: 19px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  cursor: pointer;
+  height: 180px;
+  text-align: center;
+  gap: 20px;
+}
+.aside > div:first-child {
+  border-bottom: 1px solid #00c8ff9c;
+}
+.aside > div:nth-child(2) {
+  transform: rotate(-90deg);
+  font-size: 25px;
+  transition: 0.25s;
+  cursor: pointer;
+  margin: 0;
+  height: auto;
+}
+.aside > div:nth-child(2):hover{
+  color: rgba(255, 255, 255, 0.555);
+}
+
+@media screen and (max-width: 1000px) {
+  
+}
