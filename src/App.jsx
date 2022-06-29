@@ -1,12 +1,14 @@
 import React, {Fragment} from 'react';
 import Navbar from "./components/Layout/Navbar/Navbar";
 import './assets/css/App.css'
-import AboutContainer from './components/About/AboutContainer';
+import About from './components/About/About';
+import Footer from './components/Layout/Footer/Footer';
 function App() {
   return (
     <Fragment>
       <Navbar/>
-      <AboutContainer/>
+      <About/>
+      <Footer/>
     </Fragment>
   );
 }
